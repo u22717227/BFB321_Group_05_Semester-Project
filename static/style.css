@@ -1,0 +1,120 @@
+/* Shared styles for all Eyabantu pages: taxi yellow + charcoal, one font, 8/16px spacing scale */
+:root {
+  --taxi: #ffc72c; --taxi-dark: #e0a800; --main: #1f2933; --ink: #222; --soft: #fff8e1;
+  --error: #c62828; --gap: 16px; --width: 1100px;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; background: #f7f7f2; color: var(--ink); line-height: 1.6; }
+h1, h2, h3 { margin-top: 0; line-height: 1.25; }
+.wrap { max-width: var(--width); margin: auto; padding: 0 var(--gap); }
+
+/* Header: sticky, logo links back to the welcome page */
+header { position: sticky; top: 0; z-index: 10; background: var(--main); border-bottom: 4px solid var(--taxi); }
+header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.brand { display: flex; align-items: center; gap: 10px; color: #fff; font-weight: bold; font-size: 1.4em; text-decoration: none; }
+.logo { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 8px; background: var(--taxi); color: var(--main); }
+.tagline { color: #cbd2d9; font-size: 0.9em; }
+
+/* Buttons (links styled as buttons) */
+.btn, button { display: inline-block; background: var(--taxi); color: var(--main); font-weight: bold; padding: 12px 20px;
+  border: 0; border-radius: 8px; text-decoration: none; font-size: 1em; cursor: pointer; transition: transform 0.15s, background 0.15s; }
+.btn:hover, button:hover { background: var(--taxi-dark); transform: translateY(-2px); }
+.btn.secondary { background: #e0e0e0; }
+.back { display: block; text-align: center; margin: 32px 0; background: var(--main); color: var(--taxi); }
+.back:hover { background: #111; }
+
+/* Sections */
+section.band { padding: 56px 0; }
+.section-title { text-align: center; margin-bottom: 32px; }
+.section-title p { color: #555; margin: 0; }
+
+/* Welcome page: hero */
+.hero { background: linear-gradient(135deg, var(--main) 60%, #2d3a48); color: #fff; padding: 64px 0; }
+.hero .wrap { display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: center; }
+.hero h1 { font-size: 2.8em; margin-bottom: 16px; }
+.hero h1 span { color: var(--taxi); }
+.hero p { font-size: 1.15em; color: #e4e7eb; margin-bottom: 24px; }
+.hero img { width: 100%; border-radius: 12px; box-shadow: 14px 14px 0 var(--taxi); }
+
+/* Welcome page: yellow stats band */
+.stats { background: var(--taxi); padding: 32px 0; }
+.stats .wrap { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: var(--gap); text-align: center; }
+.stats strong { display: block; font-size: 2em; color: var(--main); }
+
+/* Welcome page: SOS */
+.sos { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--gap);
+  background: #fdecea; border-left: 8px solid var(--error); border-radius: 12px; padding: 24px; }
+.sos h2 { color: var(--error); margin: 0 0 4px; }
+.sos p { margin: 0; }
+.sos-btn { background: var(--error); color: #fff; font-size: 1.2em; }
+.sos-btn:hover { background: #8e1c1c; }
+
+/* Welcome page: user blocks and steps */
+.grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
+.block { background: #fff; border-radius: 12px; padding: 28px; border-top: 6px solid var(--taxi);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06); display: flex; flex-direction: column; transition: transform 0.15s, box-shadow 0.15s; }
+.block:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1); }
+.block p { flex: 1; color: #444; }
+.icon { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; background: var(--soft); margin-bottom: 16px; }
+.light { background: #fff; }
+.step { text-align: center; }
+.step .num { display: grid; place-items: center; width: 48px; height: 48px; margin: 0 auto 12px; border-radius: 50%;
+  background: var(--main); color: var(--taxi); font-weight: bold; font-size: 1.3em; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; padding: 0; list-style: none; }
+.chips li { background: #fff; border: 2px solid var(--taxi); border-radius: 12px; padding: 8px 16px; font-weight: bold; text-align: center; }
+.chips li span { display: block; font-weight: normal; font-size: 0.85em; color: #555; }
+
+/* Inner pages: yellow page banner */
+.page-banner { background: var(--taxi); padding: 40px 0; margin-bottom: 32px; }
+.page-banner h1 { color: var(--main); font-size: 2.2em; margin-bottom: 4px; }
+.page-banner p { margin: 0; font-size: 1.1em; }
+main.wrap { max-width: 1000px; }
+
+/* Cards and tables */
+.card { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 24px; overflow-x: auto; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06); }
+table { width: 100%; border-collapse: collapse; }
+caption { caption-side: top; text-align: left; font-size: 0.85em; color: #555; padding-bottom: 8px; }
+th, td { text-align: left; padding: 10px; border-bottom: 1px solid #eee; }
+th { background: var(--main); color: #fff; }
+tbody tr:hover { background: var(--soft); }
+/* Demand colour code: very high and high = reds, moderate = light orange, low = light green */
+.very-high { background: #f28b82; }
+.high { background: #fbd0cc; }
+.moderate { background: #ffe0b2; }
+.low { background: #d4edda; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 20px; list-style: none; padding: 0; margin: 0 0 12px; font-size: 0.9em; }
+.legend li { display: flex; align-items: center; gap: 6px; }
+.swatch { width: 18px; height: 18px; border-radius: 4px; border: 1px solid rgba(0, 0, 0, 0.15); }
+.badge { padding: 3px 10px; border-radius: 999px; font-size: 0.85em; white-space: nowrap; }
+.ok { background: #c8e6c9; }
+.warn { background: #ffe0b2; }
+
+/* KPI tiles */
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--gap); }
+.kpis div { border-left: 6px solid var(--taxi); padding-left: 12px; }
+.kpis span { display: block; font-size: 1.8em; font-weight: bold; color: var(--main); }
+
+/* Forms and error messages (shown only after the user has touched a field) */
+form { display: grid; gap: 8px; max-width: 460px; }
+label { font-weight: bold; }
+input, select, textarea { padding: 10px; font-size: 1em; border: 1px solid #bbb; border-radius: 6px; }
+input:focus, select:focus, textarea:focus { outline: 3px solid var(--taxi); }
+.error { display: none; color: var(--error); font-size: 0.85em; }
+input:user-invalid, select:user-invalid { border: 2px solid var(--error); }
+input:user-invalid + .error, select:user-invalid + .error { display: block; }
+
+/* Pop-up (modal) in pure CSS: opens when the URL ends in #report-problem */
+.modal { display: none; position: fixed; inset: 0; z-index: 20; background: rgba(0, 0, 0, 0.55); padding: var(--gap); }
+.modal:target { display: flex; align-items: center; justify-content: center; }
+.modal-box { background: #fff; border-radius: 12px; padding: 24px; width: 100%; max-width: 440px; border-top: 6px solid var(--taxi); }
+.modal-head { display: flex; justify-content: space-between; align-items: center; }
+.close { font-size: 1.6em; color: #555; text-decoration: none; }
+.modal-actions { display: flex; gap: 8px; justify-content: flex-end; }
+
+/* Phones */
+@media (max-width: 760px) {
+  .hero .wrap { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 2em; }
+  .tagline { display: none; }
+  section.band { padding: 40px 0; }
+}

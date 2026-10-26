@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demand | Eyabantu</title>
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a href="index.html" class="brand"><span class="logo">E</span>Eyabantu</a>
+      <span class="tagline">Taxi information for the people</span>
+    </div>
+  </header>
+  <section class="page-banner">
+    <div class="wrap">
+      <h1>Demand heat map</h1>
+      <p>For drivers and associations: where passengers are waiting and where to send spare taxis.</p>
+    </div>
+  </section>
+
+  <main class="wrap">
+
+    <section class="card">
+      <h2>Current demand</h2>
+      <ul class="legend" aria-label="Colour key">
+        <li><span class="swatch very-high"></span>Very high</li>
+        <li><span class="swatch high"></span>High</li>
+        <li><span class="swatch moderate"></span>Moderate</li>
+        <li><span class="swatch low"></span>Low</li>
+      </ul>
+      <table>
+        <thead><tr><th>Stop</th><th>Route</th><th>Passengers waiting</th><th>Taxis present</th><th>Demand</th><th>Send taxis</th></tr></thead>
+        <tbody>
+          <tr class="very-high"><td>Mamelodi Rank</td><td>Mamelodi - Pretoria CBD</td><td>210</td><td>4</td><td><b>Very high</b></td><td>10</td></tr>
+          <tr class="high"><td>Hammanskraal Rank</td><td>Hammanskraal - Pretoria CBD</td><td>150</td><td>4</td><td><b>High</b></td><td>5</td></tr>
+          <tr class="high"><td>Denneboom</td><td>Mamelodi - Pretoria CBD</td><td>95</td><td>3</td><td><b>High</b></td><td>3</td></tr>
+          <tr class="high"><td>Soshanguve Rank</td><td>Soshanguve - Pretoria CBD</td><td>130</td><td>6</td><td><b>High</b></td><td>2</td></tr>
+          <tr class="moderate"><td>Mabopane Station</td><td>Mabopane - Pretoria CBD</td><td>70</td><td>5</td><td><b>Moderate</b></td><td>0</td></tr>
+          <tr class="moderate"><td>Atteridgeville Rank</td><td>Atteridgeville - Pretoria CBD</td><td>60</td><td>5</td><td><b>Moderate</b></td><td>0</td></tr>
+          <tr class="low"><td>Silverton</td><td>Silverton - Pretoria CBD</td><td>25</td><td>3</td><td><b>Low</b></td><td>0</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Current reports on stops</h2>
+      <table>
+        <thead><tr><th>#</th><th>Stop</th><th>Route</th><th>Report type</th><th>Safety rating</th><th>Time</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Mamelodi Rank</td><td>Mamelodi - Pretoria CBD</td><td>Taxi stops here</td><td>4 / 5</td><td>07:52</td></tr>
+          <tr><td>2</td><td>Hammanskraal Rank</td><td>Hammanskraal - Pretoria CBD</td><td>I was picked up safely</td><td>5 / 5</td><td>07:40</td></tr>
+          <tr><td>3</td><td>Soshanguve Rank</td><td>Soshanguve - Pretoria CBD</td><td>I felt safe while waiting at this stop</td><td>4 / 5</td><td>07:31</td></tr>
+          <tr><td>4</td><td>Atteridgeville Rank</td><td>Atteridgeville - Pretoria CBD</td><td>Taxi stops here</td><td>2 / 5</td><td>07:18</td></tr>
+          <tr><td>5</td><td>Denneboom</td><td>Mamelodi - Pretoria CBD</td><td>I was picked up safely</td><td>3 / 5</td><td>07:05</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card kpis">
+      <div><span>20</span>Spare taxis deployed</div>
+      <div><span>740</span>Passengers waiting now</div>
+      <div><span>776</span>Forecast passengers next hour</div>
+    </section>
+
+    <a href="index.html" class="btn back">&larr; Back to welcome page</a>
+  </main>
+</body>
+</html>

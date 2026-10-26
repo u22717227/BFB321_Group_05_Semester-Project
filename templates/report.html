@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report a Stop | Eyabantu</title>
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a href="index.html" class="brand"><span class="logo">E</span>Eyabantu</a>
+      <span class="tagline">Taxi information for the people</span>
+    </div>
+  </header>
+  <section class="page-banner">
+    <div class="wrap">
+      <h1>Report a stop or pickup</h1>
+      <p>3 or more reports will verify the stop or pickup</p>
+    </div>
+  </section>
+
+  <main class="wrap">
+
+    <section class="card">
+      <form>
+        <label for="stop">Stop name</label>
+        <select id="stop" name="stop" required aria-describedby="stop-err">
+          <option value="">Choose a stop...</option>
+          <option>Mamelodi Rank</option>
+          <option>Denneboom</option>
+          <option>Silverton</option>
+          <option>Soshanguve Rank</option>
+          <option>Atteridgeville Rank</option>
+          <option>Mabopane Station</option>
+          <option>Hammanskraal Rank</option>
+        </select>
+        <span class="error" id="stop-err">Please choose a stop.</span>
+
+        <label for="route">Route</label>
+        <select id="route" name="route" required aria-describedby="route-err">
+          <option value="">Choose a route...</option>
+          <option>Mamelodi - Pretoria CBD</option>
+          <option>Silverton - Pretoria CBD</option>
+          <option>Soshanguve - Pretoria CBD</option>
+          <option>Atteridgeville - Pretoria CBD</option>
+          <option>Mabopane - Pretoria CBD</option>
+          <option>Hammanskraal - Pretoria CBD</option>
+        </select>
+        <span class="error" id="route-err">Please choose a route.</span>
+
+        <label for="type">Report type</label>
+        <select id="type" name="type" required aria-describedby="type-err">
+          <option value="">Choose...</option>
+          <option>Taxi stops here</option>
+          <option>I was picked up safely</option>
+          <option>I felt safe while waiting at this stop</option>
+        </select>
+        <span class="error" id="type-err">Please choose a report type.</span>
+
+        <label for="safety">Safety rating (1-5)</label>
+        <input id="safety" name="safety" type="number" min="1" max="5" required aria-describedby="safety-err">
+        <span class="error" id="safety-err">Enter a rating between 1 and 5.</span>
+
+        <button type="submit">Submit report</button>
+      </form>
+    </section>
+
+    <a href="index.html" class="btn back">&larr; Back to welcome page</a>
+  </main>
+</body>
+</html>
