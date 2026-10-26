@@ -29,8 +29,8 @@ Stops are verified by combining driver GPS, commuter reports and existing route 
 ### Step 1: Get the project
 Either clone it from GitHub:
 ```
-git clone https://github.com/USERNAME/BFB321_Group05_Eyabantu.git
-cd BFB321_Group05_Eyabantu
+git clone [https://github.com/u22717227/BFB321_Group_05_Semester-Project.git](https://github.com/u22717227/BFB321_Group_05_Semester-Project.git)
+cd BFB321_Group_05_Semester-Project
 ```
 or download the zip, **right-click it and choose "Extract All"**, and open the extracted folder.
 
@@ -102,9 +102,9 @@ Despite its size, the industry is informal and unscheduled. Taxis leave only whe
 Eyabantu aims to improve customer fulfilment and fleet utilisation by sharing real-time information between commuters, drivers and taxi associations. It builds on existing tools such as TeksiMap and WhereIsMyTransport instead of replacing them.
 
 ### Impact Areas:
-- **Social:** Shorter waiting times and safer, more predictable waiting at ranks and stops
-- **Economic:** Better use of seats and higher driver income, especially in off-peak hours
-- **Operational:** Route and demand data that associations and municipalities can use for fleet planning
+- **Social:** Shorter waiting times and safer, more predictable waiting at ranks and stops.
+- **Economic:** Better use of seats and higher driver income, especially in off-peak hours.
+- **Operational:** Route and demand data that associations and municipalities can use for fleet planning.
 
 ### Pilot Area
 The demo data uses 6 Tshwane routes into Pretoria CBD:
@@ -125,43 +125,43 @@ Baseline waiting time, headway, occupancy percentage and demand will be measured
 ## Features
 
 ### Welcome Page (index.html)
-- **Sticky header** with the Eyabantu logo on every page; clicking it returns to the welcome page
-- **Hero section**: "Sawubona! Ride smarter with Eyabantu" next to a framed photo of minibus taxis
-- **Stats band** (yellow) with facts from the proposal: 15 million daily trips, 65-75% of public transport users, 6 pilot routes and the 7 taxi stops on them
-- **SOS block**: a red "Call Police 10111" button that dials straight from a phone
-- **"How will you use Eyabantu?"**: three blocks with icons, one per user, each with its own button (View live stops, View demand, Report a stop)
-- **How it works**: three steps (commuters report, drivers confirm, everyone benefits)
-- **Pilot routes**: the 6 routes, each showing its stops (the Mamelodi route has two: Mamelodi Rank and Denneboom)
+- **Sticky header** with the Eyabantu logo on every page; clicking it returns to the welcome page.
+- **Hero section**: "Sawubona! Ride smarter with Eyabantu" next to a framed photo of minibus taxis.
+- **Stats band** (yellow) with facts from the proposal: 15 million daily trips, 65-75% of public transport users, 6 pilot routes and the 7 taxi stops on them.
+- **SOS block**: a red "Call Police 10111" button that dials straight from a phone.
+- **"How will you use Eyabantu?"**: three blocks with icons, one per user, each with its own button (View live stops, View demand, Report a stop).
+- **How it works**: three steps (commuters report, drivers confirm, everyone benefits).
+- **Pilot routes**: the 6 routes, each showing its stops (the Mamelodi route has two: Mamelodi Rank and Denneboom).
 
 ### Commuter Features (stops.html)
-- **Live Stops table**: Stop, route, ETA and a confidence badge per stop
-- **Verified / Unverified badges**: Stops only show as verified once enough reports agree
-- **KPI tiles**: Expected waiting time, occupancy percentage and number of verified stops
-- **Current problems at taxi ranks**: Numbered table of reported problems per stop, most reported first. The page refreshes itself every 60 seconds (HTML meta refresh, no JavaScript)
+- **Live Stops table**: Stop, route, ETA and a confidence badge per stop.
+- **Verified / Unverified badges**: Stops only show as verified once enough reports agree.
+- **KPI tiles**: Expected waiting time, occupancy percentage and number of verified stops.
+- **Current problems at taxi ranks**: Numbered table of reported problems per stop, most reported first. The page refreshes itself every 60 seconds (HTML meta refresh, no JavaScript).
 - **Report a problem (pop-up)**: Report a late taxi, a moved stop or an unsafe stop from the same page. Built in pure CSS (`:target`), no JavaScript
 
 ### Driver & Association Features (demand.html)
-- **Demand heat map**: Passengers waiting, taxis present and the demand level per stop, shown in plain words for easy reading: Very high, High, Moderate or Low
-- **Colour code** (with a key above the table): Very high = dark red, High = light red, Moderate = light orange, Low = light green
-- **Deployment advice**: Number of the 20 spare taxis to send to each stop, sorted from most to least under-served
-- **Current reports on stops**: Numbered table of the latest reports from the Report a stop form (stop, route, report type, safety rating and time)
-- **Totals**: Passengers waiting now (740) and forecast passengers in the next hour (776)
+- **Demand heat map**: Passengers waiting, taxis present and the demand level per stop, shown in plain words for easy reading: Very high, High, Moderate or Low.
+- **Colour code** (with a key above the table): Very high = dark red, High = light red, Moderate = light orange, Low = light green.
+- **Deployment advice**: Number of the 20 spare taxis to send to each stop, sorted from most to least under-served.
+- **Current reports on stops**: Numbered table of the latest reports from the Report a stop form (stop, route, report type, safety rating and time).
+- **Totals**: Passengers waiting now (740) and forecast passengers in the next hour (776).
 
 ### Reporting Features (report.html)
-- **Report a stop or pickup**: Stop dropdown, route dropdown (6 routes), report type and a 1-5 safety rating
-- **Report types**: Taxi stops here, I was picked up safely, I felt safe while waiting at this stop
-- **Form validation**: Required fields, minimum length and rating range checks
-- **Helpful error messages**: A red message under each field explains what to fix
+- **Report a stop or pickup**: Stop dropdown, route dropdown (6 routes), report type and a 1-5 safety rating.
+- **Report types**: Taxi stops here, I was picked up safely, I felt safe while waiting at this stop.
+- **Form validation**: Required fields, minimum length and rating range checks.
+- **Helpful error messages**: A red message under each field explains what to fix.
 
 ### Frontend Design
-- **HTML and CSS only**: No JavaScript and no external libraries, so the pages also work offline
-- **Website layout**: Sticky header, full-width sections and a yellow banner at the top of each page
-- **Navigation**: Every page has a clear "Back to welcome page" button at the bottom
-- **Taxi colour theme**: Taxi yellow with charcoal, used for all buttons and highlights
-- **Responsive layout**: Works on phones (the hero image stacks under the text, tables scroll, blocks and KPI tiles stack)
-- **Accessibility**: Labels on every input, table captions and headers, alt text on the photo
-- **Reusable components**: One top bar, button, card, table, badge and KPI style shared by all pages
-- **Consistent typography and spacing**: One font and a 16px spacing scale
+- **HTML and CSS only**: No JavaScript and no external libraries, so the pages also work offline.
+- **Website layout**: Sticky header, full-width sections and a yellow banner at the top of each page.
+- **Navigation**: Every page has a clear "Back to welcome page" button at the bottom.
+- **Taxi colour theme**: Taxi yellow with charcoal, used for all buttons and highlights.
+- **Responsive layout**: Works on phones (the hero image stacks under the text, tables scroll, blocks and KPI tiles stack).
+- **Accessibility**: Labels on every input, table captions and headers, alt text on the photo.
+- **Reusable components**: One top bar, button, card, table, badge and KPI style shared by all pages.
+- **Consistent typography and spacing**: One font and a 16px spacing scale.
 
 ### Supply Chain Model (supply_chain_model.py)
 A standalone Python module with no Flask or database code. Each function has a docstring with its formula and assumptions.
@@ -191,7 +191,7 @@ A standalone Python module with no Flask or database code. Each function has a d
 
 ## Folder Structure
 ```
-BFB321_Group_05_Semester Project/
+BFB321_Group_05_Semester-Project/
 |-- index.html                   # start page: opens the welcome page
 |-- README.md
 |-- requirements.txt
